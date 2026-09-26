@@ -18,7 +18,7 @@ A production-grade personal AI assistant built on [Hermes Agent](https://github.
 
 ## Architecture
 
-![Architecture](docs/architecture.svg)
+![Architecture](docs/architecture.png)
 
 Open [`docs/architecture.html`](docs/architecture.html) for the interactive version.
 
