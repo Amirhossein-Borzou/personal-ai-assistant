@@ -1,0 +1,36 @@
+# --- secrets: NEVER commit ---
+.env
+*.env
+!config-examples/.env.example
+*.token
+*token*.json
+auth.json
+credentials*.json
+!config-examples/credentials.example.json
+
+# --- hermes runtime state: NEVER commit ---
+sessions/
+state.db
+state-snapshots/
+checkpoints/
+backups/
+memories/
+logs/
+cron/output/
+cron/runs/
+
+# --- real config lives on the VPS only ---
+config.yaml
+SOUL.md
+
+# --- private data in screenshots ---
+screenshots/private/
+*.REAL.png
+
+# --- generic ---
+__pycache__/
+*.pyc
+.venv/
+venvs/
+node_modules/
+.DS_Store

@@ -1,0 +1,24 @@
+# Illustrative Hermes Agent configuration for the demo profile.
+# This file is an EXAMPLE only — the real config.yaml never leaves the VPS.
+# Edit real settings with: hermes config set <key> <value>
+
+model:
+  default: anthropic/claude-sonnet-4   # any provider works — OpenRouter, OpenAI, local
+
+display:
+  interface: cli                       # cli | tui
+
+gateway:
+  # messaging platforms this profile answers on.
+  # each profile uses its OWN bot token from @BotFather.
+  telegram:
+    enabled: true
+
+tools:
+  web_search: true
+  web_extract: true
+  cron: true
+
+# approval gates: risky actions (sudo, external writes) require confirmation
+security:
+  approval_mode: confirm_risky
